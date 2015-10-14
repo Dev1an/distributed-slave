@@ -1,5 +1,8 @@
 {
   "dependencies": {
+    "diskspace": {
+      "version": "0.1.7"
+    },
     "node-osascript": {
       "version": "1.0.2",
       "dependencies": {

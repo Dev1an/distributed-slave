@@ -1,12 +1,9 @@
 Meteor.methods({
 	getOSInfo() {
-		const info = {
+		return {
 			arch: operatingSystem.arch(),
 			hostname: operatingSystem.hostname()
 		}
-
-		console.log(info)
-		return info
 	},
 	showDialog() {
 		this.unblock()

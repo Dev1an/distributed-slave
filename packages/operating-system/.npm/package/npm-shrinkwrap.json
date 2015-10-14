@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+    "node-osascript": {
+      "version": "1.0.2",
+      "dependencies": {
+        "buffers": {
+          "version": "0.1.1"
+        }
+      }
+    }
+  }
+}

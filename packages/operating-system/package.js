@@ -17,6 +17,7 @@ Package.onUse(function(api) {
   api.addFiles('operating-system.js', 'server');
 
   api.export('operatingSystem')
+  api.export('runApplescript')
 });
 
 Package.onTest(function(api) {
@@ -25,3 +26,7 @@ Package.onTest(function(api) {
   api.use('operating-system');
   api.addFiles('operating-system-tests.js');
 });
+
+Npm.depends({
+  'node-osascript': '1.0.2'
+})

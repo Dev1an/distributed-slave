@@ -1,10 +1,12 @@
-const initConnection = DDP.connect(Meteor.settings.masterAddress)
+const masterAddress = Meteor.settings.masterAddress || 'http://Damiaan.local:3000/'
+
+const initConnection = DDP.connect(masterAddress)
 
 initConnection.call('register', {
-	address: process.env.ROOT_URL	
+	address: process.env.ROOT_URL.replace('localhost', operatingSystem.hostname())	
 }, (err, res) => {
 	if (err) {
-		throw new Error('unable to register')
+		throw err
 	} else {
 		initConnection.disconnect()
 	}

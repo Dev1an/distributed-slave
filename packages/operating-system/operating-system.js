@@ -1,0 +1,1 @@
+operatingSystem = Npm.require('os')

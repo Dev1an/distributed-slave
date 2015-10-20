@@ -1,7 +1,15 @@
 {
   "dependencies": {
-    "diskspace": {
-      "version": "0.1.7"
+    "node-diskfree": {
+      "version": "0.1.0",
+      "dependencies": {
+        "async": {
+          "version": "0.2.10"
+        },
+        "numeral": {
+          "version": "1.4.8"
+        }
+      }
     },
     "node-osascript": {
       "version": "1.0.2",

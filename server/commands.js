@@ -2,7 +2,10 @@ Meteor.methods({
 	getOSInfo() {
 		return {
 			arch: operatingSystem.arch(),
-			hostname: operatingSystem.hostname()
+			hostname: operatingSystem.hostname(),
+			platform: operatingSystem.platform(),
+			cpuCount: operatingSystem.cpus().length,
+			drives: getDriveInfo()
 		}
 	},
 	showDialog() {

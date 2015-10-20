@@ -18,6 +18,7 @@ Package.onUse(function(api) {
 
   api.export('operatingSystem')
   api.export('runApplescript')
+  api.export('getDriveInfo')
 });
 
 Package.onTest(function(api) {
@@ -29,5 +30,5 @@ Package.onTest(function(api) {
 
 Npm.depends({
   'node-osascript': '1.0.2',
-  'diskspace': '0.1.7'
+  'node-diskfree': '0.1.0'
 })

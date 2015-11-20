@@ -30,5 +30,5 @@ Package.onTest(function(api) {
 
 Npm.depends({
   'node-osascript': '1.0.2',
-  'node-diskfree': '0.1.0'
+  'diskspace': '1.0.2'
 })

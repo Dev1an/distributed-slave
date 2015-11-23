@@ -11,7 +11,7 @@ Meteor.methods({
 	showDialog() {
 		this.unblock()
 		try {
-			return runApplescript(showDialogScript)
+			return operatingSystem.prompt('Hello', 'Distributed application', 'Enter some text')
 		} catch (error) {
 			throw new Meteor.Error('AppleScript error', error.message)
 		}

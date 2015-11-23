@@ -5,6 +5,8 @@ runApplescript = Meteor.wrapAsync(osascript.execute)
 
 const diskspace = Npm.require('diskspace');
 
+operatingSystem.prompt = Meteor.wrapAsync(Npm.require('visual-prompt').prompt)
+
 getDriveInfo = Meteor.wrapAsync(function(callback) {
 	const drive = operatingSystem.platform()=='win32' ? 'C' : '/';
 	diskspace.check(drive, function(error, total, free, status) {

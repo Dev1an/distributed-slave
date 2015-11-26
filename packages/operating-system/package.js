@@ -30,6 +30,6 @@ Package.onTest(function(api) {
 
 Npm.depends({
   'node-osascript': '1.0.2',
-  'visual-prompt': '0.0.3',
+  'visual-prompt': '0.0.5',
   'diskspace': '1.0.2'
 })
